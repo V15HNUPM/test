@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href='main.css'>
+    <link rel="stylesheet" href='{% static "main.css" %}'>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -28,7 +28,7 @@
     
     <header id="header">
         <div class="logo">
-            <a href="#"><img id="lol" src='pic/bulb.png' alt="">Furni</a>
+            <a href="#"><img id="lol" src='{% static "pic/bulb.png" %}' alt="">SacjInterio</a>
         </div>
         <ul class="navigation">
             <li><a href="#home" class="active">home</a></li>
@@ -39,7 +39,7 @@
             <li><a href="https://wa.me/8086963837/?text=urlencodedtext" target="_blank" class="whatsapp-button"><i class="fab fa-whatsapp"></i>  whatsapp Us</a></li>
         </ul>
         <div class="bars">
-            <img id="bar" src='pic/menu.png' alt="">
+            <img id="bar" src='{% static "pic/menu.png" %}' alt="">
         </div>
     </header>
     
@@ -72,7 +72,7 @@
     <div class="row">
 
         <div class="image">
-            <img src="pic/about.jpg" alt="">
+            <img src='{% static "pic/about.jpg" %}' alt="">
         </div>
 
         <div class="content">
@@ -146,7 +146,7 @@
         <div class="collect-flex">
             <div class="collect">
                 <div class="image">
-                    <img src='pic/chair4.jpg' alt="">
+                    <img src='{% static "pic/chair4.jpg" %}' alt="">
                 </div>
                 <div class="link">
                     <a href="#">chair</a>
@@ -155,7 +155,7 @@
 
             <div class="collect">
                 <div class="image">
-                    <img src='pic/chair5.jpg' alt="">
+                    <img src='{% static "pic/chair5.jpg" %}' alt="">
                 </div>
                 <div class="link">
                     <a href="#">decoration</a>
@@ -164,7 +164,7 @@
 
             <div class="collect">
                 <div class="image">
-                    <img src='pic/chair3.jpg' alt="">
+                    <img src='{% static "pic/chair3.jpg" %}' alt="">
                 </div>
                 <div class="link">
                     <a href="#">furniture</a>
@@ -173,7 +173,7 @@
 
             <div class="collect">
                 <div class="image">
-                    <img src='pic/bed.jpg' alt="">
+                    <img src='{% static "pic/bed.jpg" %}' alt="">
                 </div>
                 <div class="link">
                     <a href="#">bed</a>
@@ -182,7 +182,7 @@
 
             <div class="collect">
                 <div class="image">
-                    <img src='pic/chair2.jpg' alt="">
+                    <img src='{% static "pic/chair2.jpg" %}' alt="">
                 </div>
                 <div class="link">
                     <a href="#">armchair</a>
@@ -191,7 +191,7 @@
 
             <div class="collect">
                 <div class="image">
-                    <img src='pic/couch.jpg' alt="">
+                    <img src='{% static "pic/couch.jpg" %}' alt="">
                 </div>
                 <div class="link">
                     <a href="#">couch</a>
@@ -219,7 +219,7 @@
             <div class="shop-one">
 
                 <div class="image-one">
-                    <img src="pic/furn1.jpg" alt="">
+                    <img src='{% static "pic/furn1.jpg" %}' alt="">
                     <div class="overlay">
                         <div class="txt">
                             <h3>White Chair</h3>
@@ -231,7 +231,7 @@
                 </div>
 
                 <div class="image-one">
-                    <img src="pic/furn2.jpg" alt="">
+                    <img src='{% static "pic/furn2.jpg" %}' alt="">
                     <div class="overlay">
                         <div class="txt">
                             <h3>Blue Chair</h3>
@@ -250,7 +250,7 @@
             <div class="shop-one">
 
                 <div class="image-one">
-                    <img src="pic/furn3.jpg" alt="">
+                    <img src='{% static "pic/furn3.jpg" %}' alt="">
                     <div class="overlay">
                         <div class="txt">
                             <h3>Black Chair</h3>
@@ -265,7 +265,7 @@
                 </div>
 
                 <div class="image-one">
-                    <img src="pic/furn4.jpg" alt="">
+                    <img src='{% static "pic/furn4.jpg" %}' alt="">
                     <div class="overlay">
                         <div class="txt">
                             <h3>White lamp</h3>
@@ -279,7 +279,7 @@
             </div>
 
             <div class="shop-two">
-                <img src="pic/furn6.jpg" alt="">
+                <img src='{% static "pic/furn6.jpg" %}' alt="">
                 <div class="overlay">
                     <div class="txt">
                         <h3>Brown Chairs</h3>
@@ -311,19 +311,19 @@
         <div class="product-flex" >
             <div class="product-one">
                 <div class="product-image" >
-                    <img src='kollam/1 (1).jpeg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (1).jpeg" %}' alt="" style="width:324px;height:324px;">
                     
                 </div>
               
                 <div class="popup-container">
-                    <img src="pic/product1.jpg" alt="" class="popup-image">
+                    <img src="" alt="" class="popup-image">
                 </div>
             </div>
 
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (1).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (1).jpg" %}' alt="" style="width:324px;height:324px;">
                     
                 </div>
                 
@@ -332,7 +332,7 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (2).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (2).jpg" %}' alt="" style="width:324px;height:324px;">
                     
                 </div>
                
@@ -341,7 +341,7 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (3).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (3).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
@@ -350,7 +350,7 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (4).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (4).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
               
@@ -358,7 +358,7 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (5).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (5).jpg" %}' alt="" style="width:324px;height:324px;">
                     
                 </div>
                
@@ -366,7 +366,7 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (6).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (6).jpg" %}' alt="" style="width:324px;height:324px;">
                     
                 </div>
                 
@@ -374,7 +374,7 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (7).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (7).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
@@ -383,121 +383,121 @@
 
             <div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (8).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (8).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (9).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (9).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (10).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (10).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (11).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (11).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (13).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (13).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (14).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (14).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (15).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (15).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (16).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (16).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (17).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (17).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (18).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (18).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (19).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (19).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (20).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (20).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (21).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (21).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (22).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (22).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (23).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (23).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (24).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (24).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (25).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (25).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (26).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (26).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (27).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (27).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
             </div><div class="product-one">
                 <div class="product-image">
-                    <img src='kollam/1 (29).jpg' alt="" style="width:324px;height:324px;">
+                    <img src='{% static "kollam/1 (29).jpg" %}' alt="" style="width:324px;height:324px;">
                    
                 </div>
                
@@ -516,14 +516,14 @@
 
     <div class="bg-show" id="features">
         <div class="link">
-            <a href="#" class="link_a">play <img src='pic/right-chevron.png' alt=""></a>
+            <a href="#" class="link_a">play <img src='{% static "pic/right-chevron.png" %}' alt=""></a>
         </div>
         <div class="overlay">
             <div class="image">
-                <img src='pic/x.png' alt="" class="cancel">
-                <video src='v1.mp4' id="video"></video>
+                <img src='{% static "pic/x.png" %}' alt="" class="cancel">
+                <video src='{% static "v1.mp4" %}' id="video"></video>
                 <div class="bg-player">
-                    <img class="player" src='pic/play.png' alt="">
+                    <img class="player" src='{% static "pic/play.png" %}' alt="">
                 </div>
             </div>
         </div>
@@ -594,13 +594,12 @@
                 <div class="md:mb-12  lg:mb-0">
                     <div class="relative h-[500px] rounded-lg shadow-lg dark:shadow-black/20">
                         <iframe
-                            src="https://maps.google.com/maps?q=manhattan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.422971803626!2d76.75903787794485!3d8.746212768882911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e95998a8aa53%3A0xd5eda23094587466!2sAlumoodu!5e0!3m2!1sen!2sin!4v1696915373137!5m2!1sen!2sin"
                             class="absolute left-0 top-0 h-full w-full rounded-lg"
                             frameborder="0"
                             allowfullscreen></iframe>
                     </div>
-                </div>
-                
+                </div>            
                 
               </div>
             </div>
@@ -621,31 +620,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-col">
-                            <h4><i class="fas fa-building"></i> Company Name</h4>
-                            <p>Some text about the company...</p>
+                            <h4><i class="fas fa-building"></i>SacjInterio</h4>
+                            <p>we are your trusted partner in creating the perfect atmosphere for your home or office.</p>
                         </div>
                         
                         <div class="footer-col">
                             <h4>Get Help</h4>
-                            <p><i class="fas fa-map-marker" style="color: #207178;"></i> 123 Main St, City</p>
-                            <p><a href="tel:8086963837" target="_blank"><i class="fas fa-phone" style="color: #207178;"></i>8086963837</a></p>
+                            <p><i class="fas fa-map-marker" style="color: #207178;"></i>&nbsp; Alumoodu , kollam</p>
+                            <p><a href="tel:8086963837" target="_blank" style="color:inherit;text-decoration:none;"><i class="fas fa-phone" style="color: #207178;"></i>&nbsp;8086963837</a></p>
                         </div>
                         
                         <div class="footer-col">
                             <h4>Useful Links</h4>
                             <ul>
-                                <li><a href="#">New Arrivals</a></li>
-                                <li><a href="#">Best Sellers</a></li>
-                                <li><a href="#">Sale</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#collection">Categories</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
                             </ul>
                         </div>
                         
                         <div class="footer-col">
                             <h4>follow us</h4>
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61551941022168" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://instagram.com/sacj_interio?igshid=YzU1NGVlODEzOA==" target="_blank"><i class="fab fa-instagram"></i></a>
                                 
                             </div>
                         </div>
@@ -655,7 +654,7 @@
         <hr>
         <div class="copy">
             <section>
-                copyright &copy; at 2023 by <span>furni.</span>
+                copyright &copy; at 2023 by <span>SacjInterio.</span>
             </section>
         </div>
     
@@ -663,7 +662,17 @@
     <!-- end footer section  -->
 
     <!-- start scroll to top  -->
-    
+    <a href="tel:+905555555555" class="callMe">
+        <i class="fas fa-phone fa-2x"></i></a>
+
+
+
+    <a href="https://api.whatsapp.com/send?phone=8086963837&text=olá" class="whatsapp-button" target="_blank" style="position: fixed;  right: 18px; bottom: 66px;">
+        <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="botão whatsapp">
+      </a>
+
+
+
 
     <div class="top">
         <i class="fas fa-chevron-up"></i>
@@ -710,10 +719,10 @@
         window.addEventListener("scroll" , function(){
             if(window.scrollY > 0){
                 header.classList.add("active");
-                lol.src = 'pic/bulb2.png';
+                lol.src = '{% static "pic/bulb2.png" %}';
             }else{
                 header.classList.remove("active");
-                lol.src = 'pic/bulb.png';
+                lol.src = '{% static "pic/bulb.png" %}';
             }
             
         })
@@ -726,10 +735,10 @@
         bars.onclick = function(){
             if(nav.style.right == "0%"){
                 nav.style.right = "-50%";
-                bars.src = 'pic/menu.png'
+                bars.src = '{% static "pic/menu.png" %}'
             }else{
                 nav.style.right = "0%";
-                bars.src = 'pic/x.png'
+                bars.src = '{% static "pic/x.png" %}'
             }
             nav.classList.toggle("new")
         }
@@ -756,10 +765,10 @@
         player.onclick = ()=>{
             if(videos.paused){
                 videos.play();
-                player.src = 'pic/pause.png'
+                player.src = '{% static "pic/pause.png" %}'
             }else{
                 videos.pause();
-                player.src = 'pic/play.png'
+                player.src = '{% static "pic/play.png" %}'
             }
         }
     }
