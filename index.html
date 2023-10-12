@@ -28,7 +28,7 @@
     
     <header id="header">
         <div class="logo">
-            <a href="#"><img id="lol" src='{% static "pic/bulb.png" %}' alt="">SacjInterio</a>
+            <a href="#"><img id="lol" src="pic/bulb.png" alt="">SacjInterio</a>
         </div>
         <ul class="navigation">
             <li><a href="#home" class="active">home</a></li>
@@ -765,10 +765,10 @@
         player.onclick = ()=>{
             if(videos.paused){
                 videos.play();
-                player.src = '{% static "pic/pause.png" %}'
+                player.src =  "pic/pause.png"
             }else{
                 videos.pause();
-                player.src = '{% static "pic/play.png" %}'
+                player.src =  "pic/play.png"
             }
         }
     }
